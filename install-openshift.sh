@@ -117,7 +117,7 @@ fi
 # install the packages for Ansible
 yum -y install ansible pyOpenSSL
 
-[ ! -d openshift-ansible ] && git clone https://github.com/openshift/openshift-ansible.git
+[ ! -d openshift-ansible ] && git clone https://github.com/openshift/openshift-ansible.git --branch release-3.11
 
 cd openshift-ansible && git fetch && git checkout release-3.11 && cd ..
 
